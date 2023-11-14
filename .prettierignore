@@ -1,36 +1,11 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+###
+# Place your Prettier ignore content here
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+###
+# .gitignore content is duplicated here due to https://github.com/prettier/prettier/issues/8506
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
+# Created by .ignore support plugin (hsz.mobi)
+### Node template
 # Logs
 /logs
 *.log
@@ -96,6 +71,8 @@ typings/
 # next.js build output
 .next
 
+# nuxt.js build output
+.nuxt
 
 # Nuxt generate
 dist
@@ -109,10 +86,11 @@ dist
 # IDE / Editor
 .idea
 
-# Vim swap files
-*.swp
-
 # Service worker
 sw.*
 
+# macOS
+.DS_Store
 
+# Vim swap files
+*.swp
