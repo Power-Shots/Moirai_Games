@@ -1,11 +1,11 @@
 import React from 'react';
 
-const CommonLayout = () => {
+const Home = () => {
   return (
     <div>
-      test
+      Home
     </div>
   );
 };
 
-export default CommonLayout;
+export default Home;
