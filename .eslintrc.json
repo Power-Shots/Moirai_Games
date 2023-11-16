@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "rules": {
+    "react/display-name": 0,
+    "@next/next/no-img-element": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-duplicate-imports": "error",
+    "no-unused-vars": "error",
+    "no-useless-catch": "error",
+    "no-var": "error"
+  }
 }
