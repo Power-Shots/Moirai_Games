@@ -1,9 +1,10 @@
-import { createTheme  } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import { palette } from '@/theme/palette';
-
+import { breakpoints } from '@/theme/breakpoints';
 
 const themeVariables = {
-  palette
+  breakpoints,
+  palette,
 };
 
 const theme = createTheme(themeVariables);

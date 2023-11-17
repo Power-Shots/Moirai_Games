@@ -29,11 +29,11 @@ export default class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
         </Head>
         <body>
-        <Main />
-        <NextScript />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+          <Main />
+          <NextScript />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
                  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                  m[i].l=1*new Date();
                  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -46,8 +46,8 @@ export default class MyDocument extends Document {
                       webvisor:true
                  });
               `,
-          }}
-        />
+            }}
+          />
         </body>
       </Html>
     );
@@ -88,8 +88,9 @@ MyDocument.getInitialProps = async (ctx) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (App) => (props) =>
-        <App emotionCache={cache} {...props} />,
+      enhanceApp: (App) => (props) => (
+        <App emotionCache={cache} {...props} />
+      ),
     });
 
   const initialProps = await Document.getInitialProps(ctx);

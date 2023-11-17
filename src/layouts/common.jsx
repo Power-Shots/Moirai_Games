@@ -1,10 +1,13 @@
 import React from 'react';
+import { Main, RootContainer } from '@/layouts/common.style';
+import Header from '@/components/Header/Header';
 
-const CommonLayout = () => {
+const CommonLayout = ({ children }) => {
   return (
-    <div>
-      test
-    </div>
+    <RootContainer>
+      <Header />
+      <Main>{children}</Main>
+    </RootContainer>
   );
 };
 

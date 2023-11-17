@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint:fix": "eslint --fix",
+    "eslint": "npx eslint",
+    "prettier": "npx prettier --write --ignore-unknown **"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
