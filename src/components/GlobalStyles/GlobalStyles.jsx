@@ -1,18 +1,23 @@
 import Global from '@mui/material/GlobalStyles';
 import { palette } from '@/theme/palette';
+import { ProximaNova } from '@/theme/localFonts.fonts';
 
 const GlobalStyles = (
   <Global
     styles={{
       '*': {
-        fontFamily: `Montserrat, sans-serif`,
+        fontFamily: `${ProximaNova.style.fontFamily}, sans-serif`,
         boxSizing: 'border-box',
+        padding: 0,
+        margin: 0,
       },
       html: {
         fontSize: '24px',
         color: palette.text.white,
       },
       a: {
+        padding: 0,
+        margin: 0,
         color: palette.text.blue,
       },
 
