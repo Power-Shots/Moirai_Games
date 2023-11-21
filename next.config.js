@@ -7,11 +7,11 @@ const nextConfig = {
     styledComponents: true,
   },
   webpack: (config) => {
-    console.log(config.module.rules)
+    console.log(config.module.rules);
     config.module.rules.push({
       test: /\.(woff|woff2|eot|ttf|otf)$/i,
       type: 'asset/resource',
-    },)
+    });
     // Fixes npm packages that depend on `fs` module
 
     // if (!isServer) {
