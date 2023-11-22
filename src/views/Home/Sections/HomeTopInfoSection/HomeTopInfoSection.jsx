@@ -1,30 +1,32 @@
 import React from 'react';
 import {
-  AboutInfoContainer, Content,
+  AboutInfoContainer, Content, IconContainer, IconContainerText,
   ImageContainer,
   InfoContainer,
   LogoContainer, PolygonBackgroundContainer, PolygonBackgroundContent,
   RootContainer,
   Subtitle,
-  Title, YellowSpan,
+  Title, VideoWrapper, YellowSpan,
 } from '@/views/Home/Sections/HomeTopInfoSection/HomeTopInfoSection.style';
 import NextImg from '@/components/UI/NextImg/NextImg';
 import AppLogoIcon from '@/components/icons/AppLogoIcon';
 import { Grid, Typography } from '@mui/material';
 import { palette } from '@/theme/palette';
 import VideoContainer from '@/views/Home/SubComponents/VideoContainer/VideoContainer';
+import WarningIcon from '@/components/icons/WarningIcon';
+import MobileAndPCIcon from '@/components/icons/MobileAndPCIcon';
 
 const HomeTopInfoSection = () => {
   return (
     <RootContainer>
       <Content>
-        <Grid container>
+        <Grid columnSpacing={0} container>
           <Grid item xs={6}>
             <ImageContainer>
               <NextImg
                 src={'/images/Heroes.webp'}
-                width={707}
-                height={401}
+                width={907}
+                height={481}
                 alt='Heroes'
                 priority
               />
@@ -45,9 +47,10 @@ const HomeTopInfoSection = () => {
             </InfoContainer>
           </Grid>
         </Grid>
-        <Grid container mt={{ xs: 1, md: 15 }}>
-          <Grid display={'flex'} justifyContent='flex-end' item xs={6}>
+        <Grid container mt={{ xs: 4, md: 22 }}>
+          <Grid display={'flex'} justifyContent='flex-end' item xs={5}>
             <AboutInfoContainer>
+              <WarningIcon />
               <Typography fontSize='22px' color={palette.text.yellow}>
                 Legendary things do not tolerate haste.
               </Typography>
@@ -60,16 +63,20 @@ const HomeTopInfoSection = () => {
               </Typography>
             </AboutInfoContainer>
           </Grid>
-          <Grid item xs={6}>
-            <VideoContainer onClick={() => console.warn('click')}/>
+          <Grid item xs={7}>
+            <VideoWrapper>
+              <IconContainer>
+                <IconContainerText>Mobile & PC</IconContainerText>
+                <MobileAndPCIcon/>
+              </IconContainer>
+              <VideoContainer onClick={() => console.warn('click')}/>
+            </VideoWrapper>
           </Grid>
         </Grid>
       </Content>
 
       <PolygonBackgroundContainer>
-        <PolygonBackgroundContent>
-          <img src={'/images/PolygonBackgroundWithIcon.svg'} alt={'Polygon background'} />
-        </PolygonBackgroundContent>
+ё
       </PolygonBackgroundContainer>
     </RootContainer>
   );

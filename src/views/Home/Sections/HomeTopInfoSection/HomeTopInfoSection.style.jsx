@@ -26,15 +26,24 @@ export const PolygonBackgroundContainer = styled('div')`
   left: 0;
   bottom: -60px;
   z-index: 1;
+  background-image: url("/images/HEX_back.svg");
+  height: 100%;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
 
-  img {
-    width: 100%;
-  }
+  //img {
+  //  width: 100%;
+  //}
 `;
 
 export const PolygonBackgroundContent = styled(`div`)`
   position: relative;
+  //max-width: 1640px;
+  margin: 0 auto;
+  width: 100%;
 `;
+
+
 
 export const ImageContainer = styled('div')`
   display: flex;
@@ -47,6 +56,13 @@ export const InfoContainer = styled('div')`
   flex-direction: column;
   gap: 26px;
   margin-top: 68px;
+  position: relative;
+  
+  svg.icon {
+    position: absolute;
+    left: -30px;
+    top: 0;
+  }
 `;
 
 export const LogoContainer = styled('div')`
@@ -59,6 +75,28 @@ export const LogoContainer = styled('div')`
   }
   width: 536px;
 `;
+
+export const VideoWrapper = styled('div')`
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+`;
+
+export const IconContainer = styled('div')`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-direction: column;
+  width: fit-content;
+  right: 100px;
+  bottom: calc(100% + 51px);
+`;
+
+export const IconContainerText = styled(Typography)`
+  font-size: 18px;
+`
 
 export const Title = styled(Typography)`
   font-family: ${AAtmospheric.style.fontFamily};
@@ -86,8 +124,15 @@ export const AboutInfoContainer = styled('div')`
   width: 100%;
   gap: 32px;
   margin: 30px 30px 0 0;
+  position: relative;
+  
+  svg.icon {
+    position: absolute;
+    top: -30px;
+    right: calc(100% + 8px);
+  }
 `;
 
 export const YellowSpan = styled('span')`
   color: ${({ theme }) => `${theme.palette.text.yellow}`};
-`
+`;
