@@ -26,7 +26,7 @@ export const WhitePaperContainer = styled('div')`
   display: flex;
   align-items: center;
   gap: 9px;
-`
+`;
 
 export const LogoContainer = styled('div')`
   display: flex;
@@ -45,7 +45,7 @@ export const RedirectIconContainer = styled('div')`
   }
 `;
 
-export const  ContactsContainer = styled('div')`
+export const ContactsContainer = styled('div')`
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -60,12 +60,12 @@ export const VerticalLine = styled('span')`
   background: ${({ theme }) => theme.palette.text.white};
 `;
 
-export const  SocialLinksContainer = styled('div')`
+export const SocialLinksContainer = styled('div')`
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 24px;
-  
+
   a {
     display: flex;
     justify-content: center;
@@ -77,9 +77,8 @@ export const SocialLinkIconContainer = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   svg {
-    
     path {
       stroke: ${({ theme }) => theme.palette.text.lightPink};
       stroke-width: 2px;
@@ -87,13 +86,12 @@ export const SocialLinkIconContainer = styled('div')`
       transition: 0.2s;
     }
   }
-  
+
   &:hover {
     svg {
-      
       &.discord {
         path {
-          stroke:transparent;
+          stroke: transparent;
         }
       }
       path {

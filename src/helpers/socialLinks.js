@@ -5,11 +5,11 @@ export const socialLinks = [
   {
     name: 'X',
     href: 'https://twitter.com/',
-    icon: <XIcon/>,
+    icon: <XIcon />,
   },
   {
     name: 'Discord',
     href: 'https://discord.com/',
-    icon: <DiscordIcon/>,
-  }
-]
+    icon: <DiscordIcon />,
+  },
+];

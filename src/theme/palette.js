@@ -6,6 +6,7 @@ export const palette = {
     green: '#76B900',
     orange: '#FF6513',
     yellow: '#FFEB2C',
+    pink: '#FF00CA'
   },
   text: {
     white: '#FFFFFF',

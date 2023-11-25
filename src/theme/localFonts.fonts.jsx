@@ -1,16 +1,16 @@
-import localFont from "next/font/local";
+import localFont from 'next/font/local';
 
 export const Sovereign = localFont({
-  name: "Sovereign",
-  src: "../../public/fonts/Sovereign.ttf",
-  weight: "normal",
+  name: 'Sovereign',
+  src: '../../public/fonts/Sovereign.ttf',
+  weight: 'normal',
 });
 
 export const AAtmospheric = localFont({
   name: 'a Atmospheric',
   src: '../../public/fonts/aAtmospheric.ttf',
-  weight: 'normal'
-})
+  weight: 'normal',
+});
 
 export const ProximaNova = localFont({
   name: 'Proxima Nova',
@@ -25,6 +25,5 @@ export const ProximaNova = localFont({
       weight: '700',
       style: 'normal',
     },
-
   ],
-})
+});

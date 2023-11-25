@@ -31,24 +31,33 @@ const Header = () => {
             </Link>
           </LogoContainer>
           <WhitePaperContainer>
-            <Typography textTransform={'uppercase'} fontSize={'12px'}
-                        fontFamily={AAtmospheric.style.fontFamily}>WhitePaper</Typography>
+            <Typography
+              textTransform={'uppercase'}
+              fontSize={'12px'}
+              fontFamily={AAtmospheric.style.fontFamily}
+            >
+              WhitePaper
+            </Typography>
             <RedirectIconContainer>
               <RedirectIcon />
             </RedirectIconContainer>
           </WhitePaperContainer>
         </HeaderInfo>
         <ContactsContainer>
-          <Typography lineHeight={'32px'} textTransform={'uppercase'}
-                      fontSize={'22px'} color={palette.text.blue}
-                      fontFamily={AAtmospheric.style.fontFamily}>
+          <Typography
+            lineHeight={'32px'}
+            textTransform={'uppercase'}
+            fontSize={'22px'}
+            color={palette.text.blue}
+            fontFamily={AAtmospheric.style.fontFamily}
+          >
             NFT’s
           </Typography>
           <VerticalLine />
           <SocialLinksContainer>
             {socialLinks.map((item) => (
               <SocialLinkIconContainer key={item.name}>
-                <a href={item.href} target='_blank'>
+                <a href={item.href} target="_blank">
                   {item.icon}
                 </a>
               </SocialLinkIconContainer>
