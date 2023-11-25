@@ -1,4 +1,4 @@
-import { styled, Typography } from '@mui/material';
+import { Grid, styled, Typography } from '@mui/material';
 import { AAtmospheric } from '@/theme/localFonts.fonts';
 
 export const RootContainer = styled('section')`
@@ -22,14 +22,17 @@ export const Content = styled('div')`
 
 export const PolygonBackgroundContainer = styled('div')`
   position: absolute;
-  width: 100%;
   left: 0;
   bottom: -60px;
   z-index: 1;
-  background-image: url("/images/HEX_back.svg");
+  width: 100%;
+  //background-image: url("/images/HEX_back2.svg");
   height: 100%;
-  background-position: 0 100%;
-  background-repeat: repeat-x;
+  //background-position: 0 100%;
+  //background-repeat: repeat-x;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 
   //img {
   //  width: 100%;
@@ -40,7 +43,20 @@ export const PolygonBackgroundContent = styled(`div`)`
   position: relative;
   //max-width: 1640px;
   margin: 0 auto;
-  width: 100%;
+  min-width: 100%;
+  display: flex;
+  overflow: hidden;
+  
+  svg {
+    position: relative;
+    margin: 0 -25px;
+    min-width: 1956px;
+    //left: -50px;
+    //
+    //&:first-of-type {
+    //  left: 0;
+    //}
+  }
 `;
 
 
@@ -136,3 +152,8 @@ export const AboutInfoContainer = styled('div')`
 export const YellowSpan = styled('span')`
   color: ${({ theme }) => `${theme.palette.text.yellow}`};
 `;
+
+export const GridContainer = styled(Grid)`
+  max-width: calc(1410px + 15px * 2);
+  padding: 0 15px;
+`

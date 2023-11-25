@@ -11,6 +11,7 @@ export const RootContainer = styled('div')`
 
 export const Content = styled('div')`
   max-width: calc(1410px + 15px * 2);
+  padding: 0 15px;
   width: 100%;
   
 `

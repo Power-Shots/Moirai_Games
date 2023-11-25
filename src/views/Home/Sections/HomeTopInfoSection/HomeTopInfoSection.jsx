@@ -1,12 +1,19 @@
 import React from 'react';
 import {
-  AboutInfoContainer, Content, IconContainer, IconContainerText,
+  AboutInfoContainer,
+  Content, GridContainer,
+  IconContainer,
+  IconContainerText,
   ImageContainer,
   InfoContainer,
-  LogoContainer, PolygonBackgroundContainer, PolygonBackgroundContent,
+  LogoContainer,
+  PolygonBackgroundContainer,
+  PolygonBackgroundContent,
   RootContainer,
   Subtitle,
-  Title, VideoWrapper, YellowSpan,
+  Title,
+  VideoWrapper,
+  YellowSpan,
 } from '@/views/Home/Sections/HomeTopInfoSection/HomeTopInfoSection.style';
 import NextImg from '@/components/UI/NextImg/NextImg';
 import AppLogoIcon from '@/components/icons/AppLogoIcon';
@@ -15,8 +22,9 @@ import { palette } from '@/theme/palette';
 import VideoContainer from '@/views/Home/SubComponents/VideoContainer/VideoContainer';
 import WarningIcon from '@/components/icons/WarningIcon';
 import MobileAndPCIcon from '@/components/icons/MobileAndPCIcon';
-
+import PolygonBackground from '@/components/pictograms/PolygonBackground';
 const HomeTopInfoSection = () => {
+
   return (
     <RootContainer>
       <Content>
@@ -47,15 +55,16 @@ const HomeTopInfoSection = () => {
             </InfoContainer>
           </Grid>
         </Grid>
-        <Grid container mt={{ xs: 4, md: 22 }}>
-          <Grid display={'flex'} justifyContent='flex-end' item xs={5}>
+        <GridContainer container mt={{ xs: 4, md: 22 }}>
+          <Grid display={'flex'} gap={1} justifyContent='flex-start' item xs={5}>
+            <WarningIcon />
             <AboutInfoContainer>
-              <WarningIcon />
               <Typography fontSize='22px' color={palette.text.yellow}>
                 Legendary things do not tolerate haste.
               </Typography>
               <Typography>
-                <YellowSpan>*</YellowSpan>The team&apos;s main dream was to design a game so explosive that it would be loved by all, delivering players
+                <YellowSpan>*</YellowSpan>The team&apos;s main dream was to design a game so explosive that it would be
+                loved by all, delivering players
                 the emotion of a cozy tabletop game you can carry in your pocket or have sitting on your table.
               </Typography>
               <Typography color={palette.text.yellow} fontSize='22px'>
@@ -67,16 +76,21 @@ const HomeTopInfoSection = () => {
             <VideoWrapper>
               <IconContainer>
                 <IconContainerText>Mobile & PC</IconContainerText>
-                <MobileAndPCIcon/>
+                <MobileAndPCIcon />
               </IconContainer>
-              <VideoContainer onClick={() => console.warn('click')}/>
+              <VideoContainer onClick={() => console.warn('click')} />
             </VideoWrapper>
           </Grid>
-        </Grid>
+        </GridContainer>
       </Content>
 
       <PolygonBackgroundContainer>
-ё
+        <PolygonBackgroundContent>
+          <PolygonBackground />
+          <PolygonBackground />
+          <PolygonBackground />
+          <PolygonBackground />
+        </PolygonBackgroundContent>
       </PolygonBackgroundContainer>
     </RootContainer>
   );
