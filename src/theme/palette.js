@@ -6,7 +6,8 @@ export const palette = {
     green: '#76B900',
     orange: '#FF6513',
     yellow: '#FFEB2C',
-    pink: '#FF00CA'
+    pink: '#FF00CA',
+    lightGrey: '#979797',
   },
   text: {
     white: '#FFFFFF',

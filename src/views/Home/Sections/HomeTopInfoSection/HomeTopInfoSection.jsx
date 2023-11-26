@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   AboutInfoContainer,
-  Content, GridContainer,
+  Content,
+  GridContainer,
   IconContainer,
   IconContainerText,
   ImageContainer,
@@ -24,7 +25,6 @@ import WarningIcon from '@/components/icons/WarningIcon';
 import MobileAndPCIcon from '@/components/icons/MobileAndPCIcon';
 import PolygonBackground from '@/components/pictograms/PolygonBackground';
 const HomeTopInfoSection = () => {
-
   return (
     <RootContainer>
       <Content>
@@ -35,7 +35,7 @@ const HomeTopInfoSection = () => {
                 src={'/images/Heroes.webp'}
                 width={907}
                 height={481}
-                alt='Heroes'
+                alt="Heroes"
                 priority
               />
             </ImageContainer>
@@ -49,26 +49,35 @@ const HomeTopInfoSection = () => {
               <Subtitle>
                 With unique combat system, designed on the principle{' '}
                 <span>
-                &quot;Easy to Learn, Difficult to Master.&quot;
-              </span>
+                  &quot;Easy to Learn, Difficult to Master.&quot;
+                </span>
               </Subtitle>
             </InfoContainer>
           </Grid>
         </Grid>
         <GridContainer container mt={{ xs: 4, md: 22 }}>
-          <Grid display={'flex'} gap={1} justifyContent='flex-start' item xs={5}>
+          <Grid
+            display={'flex'}
+            gap={1}
+            justifyContent="flex-start"
+            item
+            xs={5}
+          >
             <WarningIcon />
             <AboutInfoContainer>
-              <Typography fontSize='22px' color={palette.text.yellow}>
+              <Typography fontSize="22px" color={palette.text.yellow}>
                 Legendary things do not tolerate haste.
               </Typography>
               <Typography>
-                <YellowSpan>*</YellowSpan>The team&apos;s main dream was to design a game so explosive that it would be
-                loved by all, delivering players
-                the emotion of a cozy tabletop game you can carry in your pocket or have sitting on your table.
+                <YellowSpan>*</YellowSpan>The team&apos;s main dream
+                was to design a game so explosive that it would be
+                loved by all, delivering players the emotion of a cozy
+                tabletop game you can carry in your pocket or have
+                sitting on your table.
               </Typography>
-              <Typography color={palette.text.yellow} fontSize='22px'>
-                ESSENCE currently developed on enthusiasm and without any external $ support.
+              <Typography color={palette.text.yellow} fontSize="22px">
+                ESSENCE currently developed on enthusiasm and without
+                any external $ support.
               </Typography>
             </AboutInfoContainer>
           </Grid>

@@ -4,6 +4,7 @@ export const RootContainer = styled('div')`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 `;
 
 export const HeartIconContainer = styled('div')`
@@ -18,7 +19,7 @@ export const HeartIconContainer = styled('div')`
 
 export const BoldText = styled(Typography)`
   font-weight: 700;
-  color: ${({theme}) => theme.palette.text.black}
+  color: ${({ theme }) => theme.palette.text.black};
 `;
 
 export const SupportInfoContainer = styled('div')`
@@ -27,11 +28,11 @@ export const SupportInfoContainer = styled('div')`
   gap: 119px;
   position: relative;
   width: 100%;
-  
+
   &::after {
     content: '';
     display: block;
-    background: ${({theme}) => theme.palette.text.white};
+    background: ${({ theme }) => theme.palette.text.white};
     position: absolute;
     right: 0;
     top: 50%;
