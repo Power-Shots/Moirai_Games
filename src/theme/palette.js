@@ -12,6 +12,7 @@ export const palette = {
   text: {
     white: '#FFFFFF',
     lightPink: '#FF006A',
+    pink: '#F31CB6',
     green: '#12B517',
     yellow: '#FFCE04',
     blue: '#85F0EE',

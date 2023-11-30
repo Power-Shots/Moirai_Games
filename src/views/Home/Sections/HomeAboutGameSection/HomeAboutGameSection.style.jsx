@@ -5,7 +5,7 @@ export const RootContainer = styled('div')`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 66px;
+  //margin-top: 66px;
 `;
 
 export const Content = styled('div')`

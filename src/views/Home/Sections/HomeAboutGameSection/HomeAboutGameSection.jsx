@@ -16,7 +16,7 @@ const HomeAboutGameSection = () => {
         <Grid container>
           <Grid xs={12} md={6}>
             <TextContainer>
-              <TitleText mt={6} fontSize={'32px'}>
+              <TitleText mt={14} fontSize={'32px'}>
                 Inter-Genre Game
               </TitleText>
               <Typography>
