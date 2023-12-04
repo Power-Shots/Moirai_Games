@@ -46,7 +46,7 @@ export const PolygonBackgroundContent = styled(`div`)`
   min-width: 100%;
   display: flex;
   overflow: hidden;
-  
+
   svg {
     position: relative;
     margin: 0 -25px;
@@ -58,8 +58,6 @@ export const PolygonBackgroundContent = styled(`div`)`
     //}
   }
 `;
-
-
 
 export const ImageContainer = styled('div')`
   display: flex;
@@ -73,7 +71,7 @@ export const InfoContainer = styled('div')`
   gap: 26px;
   margin-top: 68px;
   position: relative;
-  
+
   svg.icon {
     position: absolute;
     left: -30px;
@@ -112,7 +110,7 @@ export const IconContainer = styled('div')`
 
 export const IconContainerText = styled(Typography)`
   font-size: 18px;
-`
+`;
 
 export const Title = styled(Typography)`
   font-family: ${AAtmospheric.style.fontFamily};
@@ -141,7 +139,7 @@ export const AboutInfoContainer = styled('div')`
   gap: 32px;
   margin: 30px 30px 0 0;
   position: relative;
-  
+
   svg.icon {
     position: absolute;
     top: -30px;
@@ -156,4 +154,4 @@ export const YellowSpan = styled('span')`
 export const GridContainer = styled(Grid)`
   max-width: calc(1410px + 15px * 2);
   padding: 0 15px;
-`
+`;

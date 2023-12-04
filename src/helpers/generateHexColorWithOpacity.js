@@ -102,7 +102,16 @@ const hexOpacity = {
   0: '00',
 };
 
-export const generateHexColorWithOpacity = (hexColor = '#000000', opacityPercent = 50) => {
-  return hexColor + hexOpacity[(opacityPercent>100 || opacityPercent<0? 100: opacityPercent)]
-}
-
+export const generateHexColorWithOpacity = (
+  hexColor = '#000000',
+  opacityPercent = 50,
+) => {
+  return (
+    hexColor +
+    hexOpacity[
+      opacityPercent > 100 || opacityPercent < 0
+        ? 100
+        : opacityPercent
+    ]
+  );
+};
